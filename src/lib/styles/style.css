@@ -1,4 +1,16 @@
-/* style.css */
+@media (prefers-color-scheme: dark) {
+	body:not(.light) {
+		background-color: white;
+		color: black;
+		/* Your stuff here... */
+	}
+}
+
+body.dark {
+	background-color: black;
+	color: white;
+	/* And also here... */
+}
 body {
 	margin: 0;
 	background: #eee;

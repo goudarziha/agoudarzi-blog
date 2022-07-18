@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	export const load = async ({ fetch }: any) => {
-		const posts = await fetch('/api/blog.json');
+		const posts = await fetch('/api/daily.json');
 		const allPosts = await posts.json();
 
 		return {
@@ -15,7 +15,7 @@
 	export let posts: any;
 </script>
 
-<h1>Blog</h1>
+<h2>daily blog</h2>
 
 <ul>
 	{#each posts as post}

@@ -1,4 +1,3 @@
-<!-- __layout.svelte -->
 <script context="module">
 	export const load = ({ url }) => {
 		const currentRoute = url.pathname;
@@ -16,12 +15,14 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import '$lib/styles/style.css';
 	import { fade } from 'svelte/transition';
+	import SvelteSeo from 'svelte-seo';
 
 	export let currentRoute;
 </script>
 
-<Header />
+<SvelteSeo title="Amir Goudarzi" description="Amir Goudarzi musings" />
 
+<Header />
 {#key currentRoute}
 	<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
 		<slot />

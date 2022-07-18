@@ -6,8 +6,6 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://github.com/sveltejs/svelte-preprocess
-	// for more information about preprocessors
 	kit: {
 		adapter: adapter(),
 		prerender: {
@@ -19,7 +17,8 @@ const config = {
 		mdsvex({
 			extensions: ['.md'],
 			layout: {
-				blog: 'src/routes/blog/_post.svelte'
+				blog: 'src/routes/blog/_post.svelte',
+				daily: 'src/routes/daily/_post.svelte'
 			},
 			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
 		})
