@@ -2,7 +2,7 @@
 	import DarkModeToggle from './DarkModeToggle.svelte';
 </script>
 
-<header>
+<header class="container">
 	<a href="/">agoudarzi</a>
 	<nav>
 		<ul>
