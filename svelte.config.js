@@ -17,8 +17,7 @@ const config = {
 		mdsvex({
 			extensions: ['.md'],
 			layout: {
-				blog: 'src/routes/blog/_post.svelte',
-				daily: 'src/routes/daily/_post.svelte'
+				blog: 'src/routes/blog/_post.svelte'
 			},
 			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
 		})
