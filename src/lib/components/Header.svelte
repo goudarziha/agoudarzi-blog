@@ -3,7 +3,7 @@
 </script>
 
 <header class="container">
-	<a href="/">agoudarzi</a>
+	<a href="/">Amir Goudarzi</a>
 	<nav>
 		<ul>
 			<li>
